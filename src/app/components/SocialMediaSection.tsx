@@ -55,7 +55,7 @@ export function SocialMediaSection() {
         </div>
 
         {/* Social Media Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-3 gap-3 md:gap-8 max-w-4xl mx-auto">
           {socialLinks.map((social) => {
             const Icon = social.icon;
             return (
@@ -63,10 +63,10 @@ export function SocialMediaSection() {
                 key={social.name}
                 href={social.url}
                 aria-label={social.description}
-                className={`group flex flex-col items-center justify-center gap-4 p-8 rounded-2xl bg-gray-100 transition-all duration-300 hover:scale-105 ${social.color} hover:text-white h-64 w-full shadow-lg hover:shadow-xl`}
+                className={`group flex flex-col items-center justify-center gap-2 md:gap-4 p-2 md:p-8 rounded-xl md:rounded-2xl bg-gray-100 transition-all duration-300 hover:scale-105 ${social.color} hover:text-white h-32 md:h-64 w-full shadow-lg hover:shadow-xl`}
               >
-                <Icon size={64} className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
-                <span className="text-2xl font-bold">{social.name}</span>
+                <Icon className="w-8 h-8 md:w-16 md:h-16 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+                <span className="text-xs md:text-2xl font-bold">{social.name}</span>
               </a>
             );
           })}
