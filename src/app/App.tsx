@@ -13,8 +13,8 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <SEO 
-        title="Sisters With A Cause - Empowering Communities"
-        description="Join Sisters With A Cause in our mission to support and connect communities through charitable events and shared vision."
+        title="SWM Raising Hope Inc"
+        description="Join SWM Raising Hope Inc in our mission to support and connect communities through charitable events and shared vision."
       />
       <main>
         <HeroSection />
