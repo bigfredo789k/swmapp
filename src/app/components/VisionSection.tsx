@@ -11,7 +11,7 @@ export function VisionSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image - on left for desktop, circular */}
           <div className="relative order-2 md:order-1 flex justify-center">
-            <div className="relative w-[400px] h-[400px] rounded-full overflow-hidden shadow-2xl">
+            <div className="relative w-full max-w-[400px] aspect-square rounded-full overflow-hidden shadow-2xl">
               <img
                 src={visionImage}
                 alt="Community leader"
